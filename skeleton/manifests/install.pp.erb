@@ -2,7 +2,7 @@
 #
 # This class is called from <%= metadata.name %> for install.
 #
-class <%= metadata.name %>::install {
+class <%= metadata.name %>::install inherits ::<%= metadata.name %> {
 
   package { $::<%= metadata.name %>::package_name:
     ensure => present,

@@ -3,7 +3,7 @@
 # This class is meant to be called from <%= metadata.name %>.
 # It ensure the service is running.
 #
-class <%= metadata.name %>::service {
+class <%= metadata.name %>::service inherits ::<%= metadata.name %> {
 
   service { $::<%= metadata.name %>::service_name:
     ensure     => running,
